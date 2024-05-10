@@ -2,7 +2,7 @@ Soal 1
 Capture hasil deploy project Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari?
 
 ![1](/img/Screenshot%20(1190).png)
-Penjelasan : Saya telah mempelajari cara untuk menghubungkan github ke vercel. ketika keduanya sudah terkoneksi, maka project dalam akun github akan tersinkronisasi pada akun vercel. Pada akun vercel kita dapat memilih project yang ingin di deploy via vercel.
+Penjelasan : Saya telah mempelajari cara untuk menghubungkan github ke vercel. ketika keduanya sudah terkoneksi, maka project dalam akun github akan tersinkronisasi pada akun vercel. Pada akun vercel kita dapat memilih project yang ingin di deploy via vercel dengan link `nextjs-database-theta.vercel.app`.
 
 
 Soal 2
@@ -18,6 +18,5 @@ Penjelasan : Saya telah mempelajari cara melakukan seed ke basis data. Selain it
 Soal 4
 Capture hasil query Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ? Cobalah eksekusi query SQL yang lain sesuai kreasi Anda, capture hasilnya dan jelaskan!
 ![1](/img/Screenshot%20(1212).png)
-Penjelasan : Saya telah mempelajari cara melakukan querying pada data yang telah dilakukan seed. Saya juga telah mencoba query lain untuk mendapatkan total pendapatan untuk setiap bulan "SELECT month, SUM(revenue) AS total_revenue 
-FROM revenue GROUP BY month;"
+Penjelasan : Saya telah mempelajari cara melakukan querying pada data yang telah dilakukan seed. Saya juga telah mencoba query lain untuk mendapatkan total pendapatan untuk setiap bulan `ELECT month, SUM(revenue) AS total_revenue FROM revenue GROUP BY month;`
 ![1](/img/Screenshot%20(1219).png)
