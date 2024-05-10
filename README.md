@@ -15,3 +15,9 @@ Capture hasil npm run seed Anda dan buatlah laporan di file README.md. Jelaskan 
 ![1](/img/Screenshot%20(1197).png)
 Penjelasan : Saya telah mempelajari cara melakukan seed ke basis data. Selain itu telah mempelajari Troubleshooting karena module dotenv tidak ada, module bcrypt tidak ditemukan  dan data.js tidak ditemukan.
 
+Soal 4
+Capture hasil query Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ? Cobalah eksekusi query SQL yang lain sesuai kreasi Anda, capture hasilnya dan jelaskan!
+![1](/img/Screenshot%20(1212).png)
+Penjelasan : Saya telah mempelajari cara melakukan querying pada data yang telah dilakukan seed. Saya juga telah mencoba query lain untuk mendapatkan total pendapatan untuk setiap bulan "SELECT month, SUM(revenue) AS total_revenue 
+FROM revenue GROUP BY month;"
+![1](/img/Screenshot%20(1219).png)
