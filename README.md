@@ -1,3 +1,9 @@
+Nama : Muhamad Al Faroby
+
+Kelas: TI-4J
+
+NIM : 2341727001
+
 Soal 1
 Capture hasil deploy project Anda dan buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari?
 <br>
