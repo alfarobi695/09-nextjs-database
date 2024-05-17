@@ -20,15 +20,15 @@ export default async function RevenueChart() {
     }
 
     return (
-        <div className="w-full md:col-span-4">
+        <div className="w-full">
             <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
                 Recent Revenue
             </h2>
             <div className="rounded-xl bg-gray-50 p-4">
-                <div className="mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-white p-4 sm:grid-cols-13 md:gap-4">
+                <div className="mt-0 flex items-end gap-4 rounded-md bg-white p-4" style={{ width: '100%' }}>
                     {/* y-axis */}
                     <div
-                        className="mb-6 hidden flex-col justify-between text-sm text-gray-400 sm:flex"
+                        className="mb-6 flex flex-col justify-between text-sm text-gray-400"
                         style={{ height: `${chartHeight}px` }}
                     >
                         {yAxisLabels.map((label) => (
@@ -43,10 +43,11 @@ export default async function RevenueChart() {
                                 className="w-full rounded-md bg-blue-300"
                                 style={{
                                     height: `${(chartHeight / topLabel) * month.revenue}px`,
+                                    width: '50px', // Adjust the width of each bar
                                 }}
                             ></div>
                             {/* x-axis */}
-                            <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
+                            <p className="text-sm text-gray-400">
                                 {month.month}
                             </p>
                         </div>
