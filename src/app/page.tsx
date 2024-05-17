@@ -4,25 +4,33 @@ import LatestInvoices from '@/app/components/molecules/latest-invoices';
 import { lusitana } from '@/app/components/atoms/fonts';
 
 export default async function Page() {
+  // const totalPaidInvoices = await fetchTotalPaidInvoices(); // Example fetch function
+  // const totalPendingInvoices = await fetchTotalPendingInvoices(); // Example fetch function
+  // const numberOfInvoices = await fetchNumberOfInvoices(); // Example fetch function
+  // const numberOfCustomers = await fetchNumberOfCustomers(); // Example fetch function
+
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Dashboard
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {/* <Card title="Collected" value={totalPaidInvoices} type="collected" /> */}
-        {/* <Card title="Pending" value={totalPendingInvoices} type="pending" /> */}
-        {/* <Card title="Total Invoices" value={numberOfInvoices} type="invoices" /> */}
-        {/* <Card
-          title="Total Customers"
-          value={numberOfCustomers}
-          type="customers"
-        /> */}
+        {/* <Card title="Collected" value={totalPaidInvoices} type="collected" />
+        <Card title="Pending" value={totalPendingInvoices} type="pending" />
+        <Card title="Total Invoices" value={numberOfInvoices} type="invoices" />
+        <Card title="Total Customers" value={numberOfCustomers} type="customers" /> */}
       </div>
-      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        <RevenueChart />
-        {/* <LatestInvoices /> */}
+
+      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
+        <div className="md:col-span-1 flex flex-col">
+          <RevenueChart />
+        </div>
+        <div className="md:col-span-1 flex flex-col">
+          <LatestInvoices />
+        </div>
       </div>
     </main>
   );
 }
+
+
