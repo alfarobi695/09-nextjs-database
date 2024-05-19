@@ -20,42 +20,37 @@ export default async function RevenueChart() {
     }
 
     return (
-        <div className="w-full">
+        <div className="w-full md:col-span-4">
             <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
                 Recent Revenue
             </h2>
             <div className="rounded-xl bg-gray-50 p-4">
-                <div className="mt-0 flex items-end gap-4 rounded-md bg-white p-4" style={{ width: '100%' }}>
-                    {/* y-axis */}
+                <div className="relative flex flex-col items-center rounded-md bg-white p-5">
                     <div
-                        className="mb-6 flex flex-col justify-between text-sm text-gray-400"
+                        className="absolute left-0 flex flex-col justify-between h-full text-sm text-gray-400 px-2"
                         style={{ height: `${chartHeight}px` }}
                     >
                         {yAxisLabels.map((label) => (
                             <p key={label}>{label}</p>
                         ))}
                     </div>
-
-                    {revenue.map((month) => (
-                        <div key={month.month} className="flex flex-col items-center gap-2">
-                            {/* bars */}
-                            <div
-                                className="w-full rounded-md bg-blue-300"
-                                style={{
-                                    height: `${(chartHeight / topLabel) * month.revenue}px`,
-                                    width: '50px', // Adjust the width of each bar
-                                }}
-                            ></div>
-                            {/* x-axis */}
-                            <p className="text-sm text-gray-400">
-                                {month.month}
-                            </p>
-                        </div>
-                    ))}
+                    <div className="flex w-full items-end gap-2 pt-4 pl-8 pr-1" style={{ height: `${chartHeight}px` }}>
+                        {revenue.map((month) => (
+                            <div key={month.month} className="flex flex-col items-center w-full">
+                                <div
+                                    className="w-full bg-blue-300 rounded-md"
+                                    style={{
+                                        height: `${(chartHeight / topLabel) * month.revenue}px`,
+                                    }}
+                                ></div>
+                                <p className="mt-2 text-sm text-gray-400">{month.month}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className="flex items-center pb-2 pt-6">
+                <div className="flex items-center pt-6 pb-2">
                     <CalendarIcon className="h-5 w-5 text-gray-500" />
-                    <h3 className="ml-2 text-sm text-gray-500 ">Last 12 months</h3>
+                    <h3 className="ml-2 text-sm text-gray-500">Last 12 months</h3>
                 </div>
             </div>
         </div>
