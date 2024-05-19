@@ -94,3 +94,12 @@ Soal 6
 Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?<br>
 ![1](/img/Screenshot_724.png)
 Penjelasan : Saya telah mempelajari cara untuk Fetching Data pada komponen RevenueChart<br>
+
+Buka src\app\page.tsx kemudian lakukan import komponen LatestInvoices, lalu hapus comment pada komponen LatestInvoices di dalam fungsi Page().<br>
+![1](/img/Screenshot_726.png)
+
+
+Soal 7
+Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?<br>
+![1](/img/Screenshot_725.png)
+Penjelasan : Saya telah mempelajari cara untuk Fetching Data pada komponen LatestInvoices<br>
