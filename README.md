@@ -78,3 +78,19 @@ Penjelasan : Saya telah mempelajari cara membuat lobal query (Model) dan melakuk
 ![1](/img/Screenshot%20(1230).png)
 ![1](/img/Screenshot%20(1231).png)
 ![1](/img/Screenshot%20(1233).png)
+
+### Fetching Data untuk komponen RevenueChart
+Buka file src\app\page.tsx. Kemudian hapus comment pada komponen RevenueChart <br>
+![1](/img/Screenshot_722.png)
+
+Coba running localhost atau langsung deploy ke Vercel dengan cara push. <br>
+![1](/img/Screenshot_723.png)
+
+Amati apa yang terjadi ? Jika error atau ada tampilan grafik yang kurang baik, silakan Anda dapat perbaiki. <br>
+Hasil setelah diperbaiki <br>
+![1](/img/Screenshot_724.png)
+
+Soal 6
+Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?<br>
+![1](/img/Screenshot_724.png)
+Penjelasan : Saya telah mempelajari cara untuk Fetching Data pada komponen RevenueChart<br>
