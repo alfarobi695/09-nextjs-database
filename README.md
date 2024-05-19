@@ -103,3 +103,13 @@ Soal 7
 Lakukan capture dan push hasilnya, kemudian buatlah laporan di file README.md. Jelaskan apa yang telah Anda pelajari ?<br>
 ![1](/img/Screenshot_725.png)
 Penjelasan : Saya telah mempelajari cara untuk Fetching Data pada komponen LatestInvoices<br>
+
+
+# Tugas Praktikum
+1. Jika Anda perhatikan pada file src\app\page.tsx untuk komponen Card sebenarnya telah dibuat sebagai molecules pada file src\app\components\molecules\card.tsx yaitu komponen CardWrapper. Silakan Anda sesuaikan sehingga dapat tampil seperti gambar berikut.<br>
+![1](/img/Screenshot_727.png)
+
+2. Perhatikan fungsi fetchCardData() (pada file src\model\query.tsx) dari soal nomor 1. Jelaskan maksud kode dan kueri yang dilakukan dalam fungsi tersebut!<br> Penjelasan : Fungsi ini bertugas mengambil data kartu dari database. Pertama, kita memastikan tidak menyimpan data sementara. Kemudian, kita mencoba menjalankan tiga kueri SQL secara bersamaan untuk mengoptimalkan waktu eksekusi.
+Kueri pertama menghitung jumlah tagihan yang ada, yang kedua menghitung jumlah pelanggan, dan yang ketiga menghitung total tagihan yang sudah dibayar dan yang masih tertunda. Setelah itu, kita menunggu semua janji kueri selesai dieksekusi dengan `Promise.all`.
+Setelah data diterima, kita mengolahnya. Jumlah tagihan dan pelanggan diambil dari hasil kueri pertama dan kedua, sedangkan total tagihan yang sudah dibayar dan tertunda diambil dari hasil kueri ketiga. Data tersebut diformat sesuai kebutuhan, misalnya, jumlah uang dalam mata uang yang sesuai. Kemudian, hasilnya dikembalikan sebagai objek yang berisi jumlah pelanggan, jumlah tagihan, total tagihan yang sudah dibayar, dan total tagihan yang masih tertunda.
+Jika terjadi kesalahan dalam mengambil data dari database, pesan kesalahan ditampilkan di konsol, dan sebuah pengecualian dilemparkan dengan pesan yang sesuai.
